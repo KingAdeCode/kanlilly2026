@@ -196,7 +196,8 @@ const services = [
         <header id="home" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img alt="High-end editorial makeup portrait" class="w-full h-full object-cover opacity-60"
-                    data-alt="Editorial portrait showing high-end makeup artistry" src="/images/kanlilly1.jpg" />
+                    data-alt="Editorial portrait showing high-end makeup artistry"
+                    src="https://res.cloudinary.com/dn786s1zr/image/upload/v1776107420/kanlilly1_mtlahr.jpg" />
                 <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background"></div>
             </div>
             <div class="relative z-10 text-center px-6">
@@ -231,7 +232,7 @@ const services = [
                     <div v-for="service in services" :key="service.id"
                         class="bg-surface-container-low p-6 md:p-10 group hover:bg-surface-container-high transition-colors duration-500 flex flex-col h-full">
                         <span class="font-headline italic text-4xl text-outline-variant mb-10 block">{{ service.id
-                            }}</span>
+                        }}</span>
                         <h3 class="text-2xl lg:text-3xl font-headline text-on-background mb-6">{{ service.title }}</h3>
                         <p class="text-on-surface-variant font-body leading-loose mb-10">
                             {{ service.description }}
