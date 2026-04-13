@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#131313",
+              "primary-container": "#ebbb4d",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "on-surface-variant": "#d2c5b0",
+              "outline": "#9b8f7c",
+              "on-secondary-container": "#b6b5b4",
+              "on-primary": "#402d00",
+              "inverse-on-surface": "#303030",
+              "secondary-fixed": "#e4e2e1",
+              "primary-fixed-dim": "#f0c051",
+              "surface-bright": "#393939",
+              "on-secondary": "#303030",
+              "surface-variant": "#353535",
+              "tertiary-container": "#c1c2c2",
+              "on-background": "#e2e2e2",
+              "inverse-surface": "#e2e2e2",
+              "primary-fixed": "#ffdf9e",
+              "on-tertiary-container": "#4e5050",
+              "surface-container": "#1f1f1f",
+              "surface": "#131313",
+              "tertiary": "#dddede",
+              "surface-container-highest": "#353535",
+              "surface-dim": "#131313",
+              "tertiary-fixed-dim": "#c6c6c7",
+              "surface-container-lowest": "#0e0e0e",
+              "error": "#ffb4ab",
+              "secondary-container": "#474747",
+              "on-secondary-fixed-variant": "#474747",
+              "on-error-container": "#ffdad6",
+              "surface-tint": "#f0c051",
+              "on-surface": "#e2e2e2",
+              "secondary-fixed-dim": "#c8c6c6",
+              "inverse-primary": "#795900",
+              "tertiary-fixed": "#e2e2e2",
+              "on-tertiary-fixed": "#1a1c1c",
+              "surface-container-high": "#2a2a2a",
+              "on-secondary-fixed": "#1b1c1c",
+              "secondary": "#c8c6c6",
+              "outline-variant": "#4e4636",
+              "on-primary-container": "#664b00",
+              "primary": "#ffd98b",
+              "surface-container-low": "#1b1b1b",
+              "on-tertiary": "#2f3131",
+              "on-primary-fixed-variant": "#5b4300",
+              "on-tertiary-fixed-variant": "#454747",
+              "on-primary-fixed": "#261a00"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .font-notoSerif { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/80 backdrop-blur-xl shadow-2xl shadow-[#ebbb4d]/5">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-notoSerif tracking-widest text-[#ebbb4d]">KANLILLY</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-[#ebbb4d] border-b border-[#ebbb4d]/30 pb-1 font-notoSerif italic text-lg hover:scale-105 transition-all transition-transform duration-300" href="#">Home</a>
+<a class="text-white/70 hover:text-[#ebbb4d] font-notoSerif italic text-lg transition-colors hover:scale-105 transition-transform duration-300" href="#">Services</a>
+<a class="text-white/70 hover:text-[#ebbb4d] font-notoSerif italic text-lg transition-colors hover:scale-105 transition-transform duration-300" href="#">About</a>
+<a class="text-white/70 hover:text-[#ebbb4d] font-notoSerif italic text-lg transition-colors hover:scale-105 transition-transform duration-300" href="#">Portfolio</a>
+<a class="text-white/70 hover:text-[#ebbb4d] font-notoSerif italic text-lg transition-colors hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 font-label text-sm uppercase tracking-widest hover:scale-105 transition-all duration-300 active:scale-95">
+                Book Online
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="High-end editorial makeup portrait" class="w-full h-full object-cover opacity-60" data-alt="Editorial portrait showing high-end makeup artistry" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWS3BZoOT9tSUem1uxE64R83DvXSe7fUkA6Wlo8gVga-zc0CAajjo6zadaNCH8FnUmJTqi5UOrxt8PXxqeTIBH_wnl9FmZq-goweEUnfgFAkcqm_twuI32rPE9naBNXpWe1zwb1dcopv1iQAMlCIKNlmOaKk_QmTXoMiLv30GDWYSLQI7EbtGEpcwVBRAhl25ePK_WnnFME5sGhKi8KdpdUSn5C02OUHnt-cEEiS3wbamxNy07Wj-rBV1Ft805BXFKII35rqYR7vo"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/20 to-background"></div>
+</div>
+<div class="relative z-10 text-center px-6">
+<span class="font-label text-sm tracking-[0.5em] text-primary mb-6 block uppercase">Atelier de Beauté</span>
+<h1 class="text-7xl md:text-9xl font-headline italic text-on-background tracking-tighter mb-8">
+                KANLILLY
+            </h1>
+<p class="max-w-xl mx-auto text-lg md:text-xl font-body text-on-surface-variant font-light leading-relaxed">
+                Defining modern luxury through the art of makeup and hair curation.
+            </p>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4">
+<span class="font-label text-[10px] tracking-widest text-outline uppercase">Scroll to Explore</span>
+<div class="w-[1px] h-16 bg-gradient-to-b from-primary to-transparent"></div>
+</div>
+</header>
+<!-- Services Overview -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div class="max-w-2xl">
+<span class="font-label text-xs tracking-[0.3em] text-primary uppercase mb-4 block">The Services</span>
+<h2 class="text-5xl font-headline text-on-background leading-tight">Mastering the craft of <br/><span class="italic text-primary">ethereal beauty.</span></h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20">
+<!-- Service 01 -->
+<div class="bg-surface-container-low p-12 md:p-20 group hover:bg-surface-container-high transition-colors duration-500">
+<span class="font-headline italic text-4xl text-outline-variant mb-12 block">01</span>
+<h3 class="text-3xl font-headline text-on-background mb-6">Editorial Makeup</h3>
+<p class="text-on-surface-variant font-body leading-loose mb-10 max-w-md">
+                        From high-fashion runways to bridal elegance, we curate bespoke looks that celebrate individual structure and skin luminosity.
+                    </p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center gap-3 text-sm font-label tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> HD BRIDAL MAKEUP
+                        </li>
+<li class="flex items-center gap-3 text-sm font-label tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> EDITORIAL &amp; FASHION
+                        </li>
+</ul>
+<a class="inline-flex items-center gap-4 text-primary font-label text-sm tracking-widest uppercase group-hover:gap-6 transition-all" href="#">
+                        Inquire <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+<!-- Service 02 -->
+<div class="bg-surface-container-low p-12 md:p-20 group hover:bg-surface-container-high transition-colors duration-500">
+<span class="font-headline italic text-4xl text-outline-variant mb-12 block">02</span>
+<h3 class="text-3xl font-headline text-on-background mb-6">Hair Artistry</h3>
+<p class="text-on-surface-variant font-body leading-loose mb-10 max-w-md">
+                        Sculptural styling that maintains movement and health. Expert techniques for sophisticated updos and modern textures.
+                    </p>
+<ul class="space-y-4 mb-12">
+<li class="flex items-center gap-3 text-sm font-label tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> LUXURY UP-STYLING
+                        </li>
+<li class="flex items-center gap-3 text-sm font-label tracking-wide text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span> HOLLYWOOD WAVES
+                        </li>
+</ul>
+<a class="inline-flex items-center gap-4 text-primary font-label text-sm tracking-widest uppercase group-hover:gap-6 transition-all" href="#">
+                        Inquire <span class="material-symbols-outlined">trending_flat</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Gallery (Asymmetric Editorial Grid) -->
+<section class="py-32 bg-surface-container-lowest overflow-hidden">
+<div class="max-w-screen-2xl mx-auto px-12">
+<div class="text-center mb-24">
+<span class="font-label text-xs tracking-[0.3em] text-primary uppercase mb-4 block">The Curation</span>
+<h2 class="text-5xl font-headline italic">Recent Works</h2>
+</div>
+<div class="grid grid-cols-12 gap-8 items-start">
+<!-- Large Vertical Image -->
+<div class="col-span-12 md:col-span-5 aspect-[3/4] overflow-hidden bg-surface-container-high">
+<img alt="Fashion model makeup" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Stunning vertical portrait of fashion makeup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlYe4sKXkzfGUBoWW6r_Sn6t6EdGTW0fhbPgAPFDAJG7ML5QepGUid_RL3n5W2mc2t216ZNEajtZAQ9u2luXgc60UOpcPplZkBs1NDy0KS0V4qgdG6KOhOCKuU7zBUAmkKmIEHw7B4CfkcXLzbKGe74E-SSYa-VWthlZwKrHJAgx_KZgw_jVfqS23BWFdY-1QA1rI5-X4bTzuh8ewX4xr7fvGaZ2FU8HCj2uVvowO51dZeTNFFC3mv10qbs-ybrsrXjwgjCP2o9EE"/>
+</div>
+<div class="col-span-12 md:col-span-7 grid grid-cols-2 gap-8">
+<div class="col-span-2 aspect-video overflow-hidden bg-surface-container-high">
+<img alt="Luxury makeup flatlay" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Close up of high end makeup textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWR9D9dbAly7NW56mk_ve3C6CS6jINoc8wtY_wY9LDnmS657MwNfOoKtYHopTkptZCt9wOaHFtQZ1Ar-h8RqBUmU8h29iG-jgqxRTMtZlk6C8vlQUsXZrv7vbWv986fjgSseQaXTO1v2YIs0EtLPpYJn-y7EiU1IdnRXD3cLdg1gpcSRp49JnrwSO5z1E9gNChEW35zgqBYa5GdeJTadXsEC-Uqdl1Z8eXN8WIZAiaIed3uBu8vFxUPWrw8eu_66zRspJRvOFKsBg"/>
+</div>
+<div class="col-span-1 aspect-square overflow-hidden bg-surface-container-high md:mt-12">
+<img alt="Hair styling detail" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="Detailed shot of elegant bridal hair styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7ljl1jlY0oC5IUxWQpb-PZt9GYExmHl64CA9_JxVyLfft87Bc5jzrLeEoaM62cHq7jPeR2sQXUMyQn1V23r1PZ1YQpTKoyOzs-TBjwPlqTdOfpT5Q9Lr6eAZjV-ifmVTxPAAzasehcQQkaIqgaKVQCxfUZ-LStosDaDT4HFtfd2Y4Zt-B62Bvsi1TsqxzI6XW5aIgHsai3KcBrCyvXIUX66d8WeFHXXsLPCfO7rYIf3DClXZcrZM6hNUtafnwG3YM9RKgpc5SfNs"/>
+</div>
+<div class="col-span-1 aspect-square overflow-hidden bg-surface-container-high">
+<img alt="Beauty shoot" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" data-alt="High contrast editorial beauty shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIc-iAQwQvIThAE5bJz1rhE79LSpGWrmUp8TD5eiSu1DhbIOL5Boynp69mPjYkD7P8rwgP-gHVwweGm-L9CDqYQajBg7RBOAf_6FhIs5gSzCSfVy5SHxNxJfVBjTXSIlPrmaXIxheZrO4bMo0TW-ldW7Hw29eitMN-yLU8nV1xUY2qwago58CsZzwoZwEo1QYXqdd5hh_8BJhxPOa712Y199Se-wmeXQSFBub_jNuyQCkkG2TWWi5vYO4VOKtoLPdPx6wSIWE1Hwc"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 px-12 bg-background">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img alt="Portrait of the artist" class="w-full h-full object-cover" data-alt="Professional portrait of the lead artist at work" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnr49_55CUnICwhzh73V22xu8u-lV1_eCVmeg9jXgrAlLPfVETuNnEd3oAfYwdynzhDSpD9otYvdA5BfX6VJnuI13q7APL7sizPxiUyrX4agMqKKM2b0wP4ZRm0S2_xdnrYKVflOYC_L8ntE_9qKtjD8y4YoJFQZT1zgL_Fwwy2qO3PhMGgHQuOd1Uojos-jdHMEQ0QerYXOsbl328Vyci1BRlqSSgZiXemIF4vw1Dfk8T6wONEguHB7KUS_g-r1C4zpj6L1fvI2U"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/10 backdrop-blur-3xl -z-10"></div>
+</div>
+<div>
+<span class="font-label text-xs tracking-[0.3em] text-primary uppercase mb-6 block">The Artist</span>
+<h2 class="text-5xl font-headline mb-8 leading-tight">Visionary artistry for the <span class="italic">modern individual.</span></h2>
+<div class="space-y-6 text-on-surface-variant font-body text-lg leading-relaxed">
+<p>
+                        With over a decade of experience in the luxury beauty industry, Kanlilly Atelier was founded on the principle that makeup is not a mask, but a sophisticated curation of features.
+                    </p>
+<p>
+                        Our philosophy merges classical techniques with avant-garde innovation, ensuring every client leaves with a look that is both timeless and strikingly current.
+                    </p>
+</div>
+<div class="mt-12 pt-12 border-t border-outline-variant/20 flex gap-12">
+<div>
+<div class="text-3xl font-headline text-primary mb-1">10+</div>
+<div class="text-xs font-label tracking-widest text-outline uppercase">Years Experience</div>
+</div>
+<div>
+<div class="text-3xl font-headline text-primary mb-1">500+</div>
+<div class="text-xs font-label tracking-widest text-outline uppercase">Clients Served</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section (Glassmorphism) -->
+<section class="py-40 px-6">
+<div class="max-w-5xl mx-auto relative overflow-hidden bg-surface-container-high/40 backdrop-blur-2xl p-16 md:p-32 text-center rounded-xl shadow-2xl shadow-primary/5 border border-primary/5">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2"></div>
+<div class="relative z-10">
+<h2 class="text-5xl md:text-7xl font-headline italic mb-12">Reserve Your <br/>Experience</h2>
+<p class="text-on-surface-variant text-xl font-body max-w-xl mx-auto mb-16 font-light">
+                    Join us for a curated session where your unique beauty becomes our masterpiece. Limited availability for 2024.
+                </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary-container text-on-primary-container px-10 py-5 font-label text-sm uppercase tracking-widest hover:scale-105 transition-all">
+                        Book Online Now
+                    </button>
+<button class="border border-outline-variant/30 text-primary px-10 py-5 font-label text-sm uppercase tracking-widest hover:bg-primary/5 transition-all">
+                        View Pricing Guide
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#131313] w-full border-t border-[#ebbb4d]/10">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full max-w-screen-2xl mx-auto">
+<div class="text-xl font-notoSerif text-[#ebbb4d] mb-6 md:mb-0">KANLILLY</div>
+<div class="flex flex-wrap justify-center gap-8 mb-6 md:mb-0">
+<a class="font-manrope text-sm tracking-loose text-white/50 hover:text-[#ebbb4d] transition-colors" href="#">Instagram</a>
+<a class="font-manrope text-sm tracking-loose text-white/50 hover:text-[#ebbb4d] transition-colors" href="#">Pinterest</a>
+<a class="font-manrope text-sm tracking-loose text-white/50 hover:text-[#ebbb4d] transition-colors" href="#">Facebook</a>
+<a class="font-manrope text-sm tracking-loose text-white/50 hover:text-[#ebbb4d] transition-colors" href="#">Terms</a>
+<a class="font-manrope text-sm tracking-loose text-white/50 hover:text-[#ebbb4d] transition-colors" href="#">Privacy</a>
+</div>
+<div class="font-manrope text-xs tracking-widest text-white/30 uppercase">
+                © 2024 KANLILLY ATELIER. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
