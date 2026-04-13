@@ -27,7 +27,31 @@ onUnmounted(() => {
     }
 })
 
-const portfolioImages = Array.from({ length: 29 }, (_, i) => `/images/kanlilly-image${i + 2}.webp`)
+const portfolioImages = [
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107418/kanlilly-image30_ptdjy5.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image25_vgophj.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image28_dzzqu1.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image24_fdqvft.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image27_dxkoao.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image26_ec6xyz.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107415/kanlilly-image23_w7gfal.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107415/kanlilly-image22_i3jev7.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107415/kanlilly-image21_agkd72.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107412/kanlilly-image16_rqge3j.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107412/kanlilly-image15_brbh1b.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107411/kanlilly-image13_lbzywi.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107411/kanlilly-image9_xxxau4.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107410/kanlilly-image12_fnk97e.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107410/kanlilly-image7_zvamnf.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107409/kanlilly-image10_lbvnsy.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107409/kanlilly-image8_bqgp7s.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107409/kanlilly-image6_rbzlge.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107409/kanlilly-image11_pip9jw.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107408/kanlilly-image4_oehr0f.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107408/kanlilly-image2_yo1gi8.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107408/kanlilly-image5_akwdkk.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107408/kanlilly-image3_aunlvd.webp"
+]
 
 const lightboxOpen = ref(false)
 const currentImageIndex = ref(0)
@@ -103,7 +127,8 @@ const services = [
             class="fixed top-0 w-full z-50 bg-[#131313]/90 backdrop-blur-xl shadow-2xl shadow-[#ebbb4d]/5 border-b border-transparent md:border-transparent transition-colors duration-300">
             <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto relative z-50">
                 <div>
-                    <img src="/images/kanlilly-white.svg" class="w-28" />
+                    <img src="https://res.cloudinary.com/dn786s1zr/image/upload/v1776107418/kanlilly-white_l44zbc.svg"
+                        class="w-28" />
                 </div>
 
                 <!-- Desktop Menu -->
@@ -206,7 +231,7 @@ const services = [
                     <div v-for="service in services" :key="service.id"
                         class="bg-surface-container-low p-6 md:p-10 group hover:bg-surface-container-high transition-colors duration-500 flex flex-col h-full">
                         <span class="font-headline italic text-4xl text-outline-variant mb-10 block">{{ service.id
-                        }}</span>
+                            }}</span>
                         <h3 class="text-2xl lg:text-3xl font-headline text-on-background mb-6">{{ service.title }}</h3>
                         <p class="text-on-surface-variant font-body leading-loose mb-10">
                             {{ service.description }}
@@ -266,7 +291,8 @@ const services = [
                 <div class="relative">
                     <div class="aspect-[4/5] bg-surface-container-high overflow-hidden">
                         <img alt="Portrait of the artist" class="w-full h-full object-cover"
-                            data-alt="Professional portrait of the lead artist at work" src="/images/damilola.jpeg" />
+                            data-alt="Professional portrait of the lead artist at work"
+                            src="https://res.cloudinary.com/dn786s1zr/image/upload/v1776107407/damilola_lgqcd6.jpg" />
                     </div>
                     <div class="absolute -bottom-8 -right-8 w-48 h-48 bg-primary/10 backdrop-blur-3xl -z-10"></div>
                 </div>
@@ -337,7 +363,8 @@ const services = [
             <div
                 class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full max-w-screen-2xl mx-auto">
                 <div>
-                    <img src="/images/kanlilly-white.svg" class="w-28" />
+                    <img src="https://res.cloudinary.com/dn786s1zr/image/upload/v1776107418/kanlilly-white_l44zbc.svg"
+                        class="w-28" />
                 </div>
                 <div class="flex flex-wrap justify-center gap-8 mb-6 md:mb-0">
                     <a class="font-manrope text-sm tracking-loose text-white/50 hover:text-[#ebbb4d] transition-colors"
