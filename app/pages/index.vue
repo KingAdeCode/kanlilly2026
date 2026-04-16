@@ -51,7 +51,7 @@ const portfolioImages = [
     "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107408/kanlilly-image4_oehr0f.webp",
     "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107408/kanlilly-image2_yo1gi8.webp",
     "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107408/kanlilly-image5_akwdkk.webp",
-    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107408/kanlilly-image3_aunlvd.webp"
+
 ]
 
 const lightboxOpen = ref(false)
@@ -233,7 +233,7 @@ const services = [
                     <div v-for="service in services" :key="service.id"
                         class="bg-surface-container-low p-6 md:p-10 group hover:bg-surface-container-high transition-colors duration-500 flex flex-col h-full">
                         <span class="font-headline italic text-4xl text-outline-variant mb-10 block">{{ service.id
-                        }}</span>
+                            }}</span>
                         <h3 class="text-2xl lg:text-3xl font-headline text-on-background mb-6">{{ service.title }}</h3>
                         <p class="text-on-surface-variant font-body leading-loose mb-10">
                             {{ service.description }}
@@ -272,7 +272,7 @@ const services = [
                     <h2 class="text-3xl lg:text-4xl  font-headline italic">Recent Works</h2>
                 </div>
                 <!-- Grid of 3 images without gap -->
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
                     <div v-for="(image, index) in portfolioImages" :key="index" @click="openLightbox(index)"
                         class="aspect-square relative group cursor-pointer overflow-hidden bg-surface-container-high">
                         <img :src="image" :alt="`Portfolio Image ${index + 1}`" loading="lazy"
