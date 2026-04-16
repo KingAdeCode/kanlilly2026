@@ -28,17 +28,18 @@ onUnmounted(() => {
 })
 
 const portfolioImages = [
-    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107418/kanlilly-image30_ptdjy5.webp",
-    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image25_vgophj.webp",
-    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image28_dzzqu1.webp",
-    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image24_fdqvft.webp",
-    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image27_dxkoao.webp",
-    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image26_ec6xyz.webp",
-    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107415/kanlilly-image23_w7gfal.webp",
-    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107415/kanlilly-image22_i3jev7.webp",
     "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107415/kanlilly-image21_agkd72.webp",
     "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107412/kanlilly-image16_rqge3j.webp",
     "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107412/kanlilly-image15_brbh1b.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image27_dxkoao.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image28_dzzqu1.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image24_fdqvft.webp",
+
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107418/kanlilly-image30_ptdjy5.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image25_vgophj.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107417/kanlilly-image26_ec6xyz.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107415/kanlilly-image23_w7gfal.webp",
+    "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107415/kanlilly-image22_i3jev7.webp",
     "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107411/kanlilly-image13_lbzywi.webp",
     "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107411/kanlilly-image9_xxxau4.webp",
     "https://res.cloudinary.com/dn786s1zr/image/upload/v1776107410/kanlilly-image12_fnk97e.webp",
